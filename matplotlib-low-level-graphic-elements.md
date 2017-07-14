@@ -24,3 +24,12 @@ its attributes and how to add additional axes to a figure container which alread
 
 ![subplots](images/subplots.png)
 
+## Figure parameters and attributes
+
+### Figure parameters
+
+Below is a comparison between two figure instances with different parameter values.
+
+![figure-parameters](figure-parameters.png)
+
+
