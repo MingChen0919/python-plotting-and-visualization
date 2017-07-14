@@ -30,6 +30,6 @@ its attributes and how to add additional axes to a figure container which alread
 
 Below is a comparison between two figure instances with different parameter values.
 
-![figure-parameters](figure-parameters.png)
+![figure-parameters](images/figure-parameters.png)
 
 
