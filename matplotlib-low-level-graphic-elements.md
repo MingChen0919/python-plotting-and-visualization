@@ -37,18 +37,41 @@ import numpy as np
 x1, y1 = np.random.rand(10), np.random.rand(10)
 x2, y2 = np.random.rand(10), np.random.rand(10)
 
-# Line2D and Patch
-from matplotlib.lines import Line2D
-l1 = Line2D(xdata=x1, ydata=y1, transform=fig.transFigure, figure=fig, color='red', linewidth=4.0)
-l2 = Line2D(xdata=x2, ydata=y2, transform=fig.transFigure, figure=fig, linestyle='-.', color='blue', linewidth=2.0)
-
 # figuare attributes
 fig = plt.figure()
+
+# Line2D and Patch
+from matplotlib.lines import Line2D
+l1 = Line2D(xdata=x1, ydata=y1, transform=fig.transFigure, figure=fig, color='red')
+l2 = Line2D(xdata=x2, ydata=y2, transform=fig.transFigure, figure=fig, linestyle='-.', color='blue')
+
 fig.lines.extend([l1, l2])
 fig.canvas.draw()
 ```
 
+Note that range of the width and height of the default figure container is within (0, 1). if
+your x, y values is outside this range, you won't be able to see the points on the figure.
+
 <p align="center"><img src="images/line2d-on-figure.png" width=600></p>
+
+### `Patch`
+
+The **`Patch`** class is used draw plane-like artists. The `facecolor` and `edgecolor` are two common
+properties of a **`Patch`** instance. Like `Axes` and `Line2D`, we can add `Patches` directly to the `figure` container.
+
+```python
+import matplotlib.path as mpath
+import matplotlib.patches as mpatches
+
+cp = mpatches.CirclePolygon(xy=(200, 200), radius=50)
+el = mpatches.Ellipse(xy=(350, 300), width=210, height=100, angle=45, color="green")
+
+fig = plt.figure()
+fig.patches.extend([cp, el])
+fig.canvas.draw()
+```
+
+<p align="center"><img src="images/patch-on-figure.png" width=600></p>
 
 ## Figure parameters and attributes
 
