@@ -48,7 +48,7 @@ fig.lines.extend([l1, l2])
 fig.canvas.draw()
 ```
 
-<img src="images/line2d-on-figure.png" width=600 align="center">
+<center><img src="images/line2d-on-figure.png" width=600></center>
 
 ## Figure parameters and attributes
 
