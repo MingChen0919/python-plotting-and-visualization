@@ -7,3 +7,4 @@
 * **`Subplot`** is an **`Axes`** which is already bound to a **`Figure`** instance.
 
 ![figure and axes](images/figure-and-axes.png)
+*Fig 1. Figure and Axes*
