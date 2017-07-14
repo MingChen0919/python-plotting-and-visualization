@@ -17,3 +17,10 @@ The image below shows how axes instances are added to a figure instance:
 The image below shows how to create a **`subplot`** and edit it.
 
 ![subplot](images/subplot.png)
+
+We can easily create multiple subplots within a figure container with `subplots()`. The image below
+shows how to create multiple subplots within a figure container, how to access specific subplot and edit
+its attributes and how to add additional axes to a figure container which already hosts multiple subplots.
+
+![subplots](images/subplots.png)
+
