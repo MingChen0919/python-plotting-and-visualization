@@ -24,6 +24,32 @@ its attributes and how to add additional axes to a figure container which alread
 
 ![subplots](images/subplots.png)
 
+
+## `Line2D` and `Patch`
+
+### `Line2D`
+
+**`Line2D`** class is used to draw a variety of line styles. Like **`Axes`** instances, **`Line2d`** instances
+can be added to a figure container.
+
+```python
+import numpy as np
+x1, y1 = np.random.rand(10), np.random.rand(10)
+x2, y2 = np.random.rand(10), np.random.rand(10)
+
+# Line2D and Patch
+from matplotlib.lines import Line2D
+l1 = Line2D(xdata=x1, ydata=y1, transform=fig.transFigure, figure=fig, color='red', linewidth=4.0)
+l2 = Line2D(xdata=x2, ydata=y2, transform=fig.transFigure, figure=fig, linestyle='-.', color='blue', linewidth=2.0)
+
+# figuare attributes
+fig = plt.figure()
+fig.lines.extend([l1, l2])
+fig.canvas.draw()
+```
+
+![line2d-on-figure](images/line2d-on-figure.png)
+
 ## Figure parameters and attributes
 
 ### Figure parameters
