@@ -3,5 +3,5 @@
 ## Matplotlib
 
 * [Figure, Axes and Subplot](figure-axes-subplot.md)
-* [Axes Appearance](axes-appearance.ipynb)
+* [Axes](axes.ipynb)
 * [Axis](axis.ipynb)
