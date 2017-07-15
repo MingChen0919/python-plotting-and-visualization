@@ -24,6 +24,12 @@ its attributes and how to add additional axes to a figure container which alread
 
 ![subplots](images/subplots.png)
 
+### Figure parameters
+
+Below is a comparison between two figure instances with different parameter values.
+
+![figure-parameters](images/figure-parameters.png)
+
 
 ## `Line2D` and `Patch`
 
@@ -73,12 +79,6 @@ fig.canvas.draw()
 
 <p align="center"><img src="images/patch-on-figure.png" width=600></p>
 
-## Figure parameters and attributes
 
-### Figure parameters
-
-Below is a comparison between two figure instances with different parameter values.
-
-![figure-parameters](images/figure-parameters.png)
 
 
