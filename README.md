@@ -8,4 +8,5 @@
 * **Plotting**
     + **Basic**
         * [plot lines and/or markers](lines-and-markers.ipynb)
-        * [plot errorbar](errorbar.ipynb)
+        * [errorbar plot](errorbar.ipynb)
+        * [scatter plot](scatter.ipynb)
