@@ -10,3 +10,4 @@
         * [plot lines and/or markers](lines-and-markers.ipynb)
         * [errorbar plot](errorbar.ipynb)
         * [scatter plot](scatter.ipynb)
+        * [vertical/horizontal bar plots](bar-plots.ipynb)
